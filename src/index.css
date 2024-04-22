@@ -33,10 +33,12 @@ body {
 	justify-content: center;
 	background-color: var(--Verydark-blue);
 	transition: all 0.3s;
+	min-width: 29.6rem;
 }
 .dashboard__main {
 	width: min(87.2%, 112.5rem);
 	height: 51rem;
+	min-width: 29.6rem;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -296,8 +298,9 @@ body {
 	.dashboard__main {
 		display: flex;
 		flex-direction: column;
-		width: 34rem;
+		width: 43rem;
 		gap: 2.5rem;
+		min-width: 29.6rem;
 	}
 	.profile {
 		width: 100%;
