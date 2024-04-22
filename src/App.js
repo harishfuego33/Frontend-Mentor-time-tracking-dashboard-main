@@ -37,7 +37,7 @@ function Profile({ onQuery }) {
 		onQuery(btnno);
 	}
 	return (
-		<section className="profile item">
+		<section className="profile">
 			<div className="profile__first-box">
 				<div className="profile__img-box">
 					<img
@@ -46,8 +46,10 @@ function Profile({ onQuery }) {
 						className="profile__img"
 					></img>
 				</div>
-				<p className="profile__img-text">Report for</p>
-				<h1 className="profile__name">Jeremy Rabson</h1>
+				<div className="profile__text">
+					<p className="profile__img-text">Report for</p>
+					<h1 className="profile__name">Jeremy Rabson</h1>
+				</div>
 			</div>
 			<div className="profile__second-box">
 				<button
@@ -98,62 +100,13 @@ function Comps({ key, title, current, previous }) {
 						className="task__icon"
 					></img>
 				</div>
-				<h1 className="dashboard__comps-heading">{current}hrs</h1>
-				<p className="dashboard__comps-paraphase">
-					Last Week - {previous}hrs
-				</p>
+				<div className="comp-heading">
+					<h1 className="dashboard__comps-heading">{current}hrs</h1>
+					<p className="dashboard__comps-paraphase">
+						Last Week - {previous}hrs
+					</p>
+				</div>
 			</div>
 		</div>
 	);
 }
-/*{
-		"title": "Exercise",
-		"timeframes": {
-			"daily": {
-				"current": 1,
-				"previous": 1
-			},
-			"weekly": {
-				"current": 4,
-				"previous": 5
-			},
-			"monthly": {
-				"current": 11,
-				"previous": 18
-			}
-		}
-	},
-	{
-		"title": "Social",
-		"timeframes": {
-			"daily": {
-				"current": 1,
-				"previous": 3
-			},
-			"weekly": {
-				"current": 5,
-				"previous": 10
-			},
-			"monthly": {
-				"current": 21,
-				"previous": 23
-			}
-		}
-	},
-	{
-		"title": "Self-Care",
-		"timeframes": {
-			"daily": {
-				"current": 0,
-				"previous": 1
-			},
-			"weekly": {
-				"current": 2,
-				"previous": 2
-			},
-			"monthly": {
-				"current": 7,
-				"previous": 11
-			}
-		}
-	} */
